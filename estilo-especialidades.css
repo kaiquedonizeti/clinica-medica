@@ -31,10 +31,6 @@ body{
     color: #2ec0c5;
     transition: 0.4s;
 }
-.link-especialidades > nav > .nao-espacar:hover{
-    color: #2ec0c5;
-    transition: 0.4s;
-}
 .link-especialidades > h1{
     text-align: center;
     color: #0000008c;
@@ -104,6 +100,9 @@ tr:nth-of-type(even){
     header > .topo > .link-topo > a{
         padding: 0;
     }
+    .link-especialidades > nav{
+        margin: auto;
+    }
     .img-tam{
         display: none;
     }
@@ -124,6 +123,7 @@ tr:nth-of-type(even){
         margin: 0px 20px;
     }
 }
+/*=============================================================================================*/
 @media (min-width: 769px) and (max-width: 1024px){
     #Pediatria, #Geriatria, #Psicologia, #Fisioterapia, #Ortopedia{
         margin: 0px 30px;
