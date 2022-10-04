@@ -1,0 +1,297 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro';
+    color: #0000008c;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color: #00cad1;
+    height: 60px;  
+}
+a > .logo-topo{
+    width: 110px;
+}
+.topo{
+    margin: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-topo > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #b3ffff;
+    padding-right: 10px;
+}
+.link-topo > a:hover{
+    color: #0c6e71;
+    transition: 0.8s;
+}
+.cont-img-topo{
+    background-image: url(assets/recepcao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+}
+.img-topo{
+    max-width: 1024px;
+    margin: auto;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #f9f6f1;
+    font-weight: normal;
+}
+.area-sobre{
+    max-width: 1024px;
+    margin: auto;
+}
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+.container-lista{
+    max-width: 1024px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.diminuir-img{
+    width: 260px;
+}
+.clinica-multi{
+    margin: auto;  
+    max-width: 1024px;
+}
+.clinica-multi > p{
+    text-align: center;
+    margin-bottom: 20px;  
+}
+.clinica-multi > .alinhar-imagem{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.clinica-multi > .alinhar-imagem > figure{
+    box-shadow: 1px 1px 9px 2px #5352528c;
+    margin-bottom: 80px;
+}
+.clinica-multi > .alinhar-imagem > figure > figcaption{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.div-horario{
+    display: flex;
+    justify-content: center;
+}
+.link-do-horario{
+    padding: 10px 17px;
+    text-align: center;
+    background-color: #00cad1;
+    text-decoration: none;
+    color: #c2f7ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.link-do-horario:hover{
+    transition: 0.4s;
+    background-color: #0C6E71;
+    color: #c2f7ff;
+}
+.p-center{   
+    text-align: center;
+}
+.p-center > span{
+    font-weight: bold;
+}
+iframe{
+    display: block;
+    max-width: 1024px;
+    width: 100%;
+    height: 300px;
+    margin: 40px auto;
+}
+footer{
+    width: 100%;
+    background-color: #0C6E71;
+    padding: 20px;
+}
+footer > .div-footer{
+    max-width: 1024px;
+    margin: auto;
+}
+footer > .div-footer > .logo-fundo{
+    display: block;
+    margin: auto;
+    width: 120px;
+}
+footer > .p-center{
+    color: #bae4e7;
+    font-weight: 600;
+}
+/*=============================================================================*/
+@media (max-width: 425px){
+    header{
+        height: 120px;
+    }
+    header > .topo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    header > .topo > a > .logo-topo{
+        width: 120px;
+    }
+    header > .topo > .link-topo{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #0c6e7185;
+        padding-top: 10px;
+    }
+    header > .topo > .link-topo > a{
+        padding: 0;
+    }
+    .cont-img-topo{     
+       height: 170px;
+    }
+    .cont-img-topo > .img-topo{
+       height: 170px;
+       padding-left: 12px;
+       font-size: 23px;
+    }
+    .area-sobre{
+        padding: 0px 12px;
+    }
+    .area-sobre > .p-center-topo{
+        text-align: center;
+    }
+    .area-sobre > .container-lista > img{
+        display: none;
+    }
+    .area-sobre > .container-lista > .div-lista > h3{
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .clinica-multi > h2{
+        padding: 0px 6px;
+    }
+    .clinica-multi > p{
+        padding: 0px 30px;
+    }
+    #contato > p{
+        padding: 0px 14px;  
+    }
+    #contato > iframe{
+        padding: 0px 18px;
+    }
+    footer > .div-footer p{
+        color: #bae4e7;
+    }
+}
+/*=============================================================================*/
+@media (min-width: 426px) and (max-width: 768px){
+    header > .topo{
+        padding: 0px 14px;
+    }
+    .cont-img-topo{
+        height: 300px;
+        background-position: center;
+    }
+    .cont-img-topo > .img-topo{
+        padding-left: 14px;
+        height: 300px;
+        font-size: 40px;
+    }
+    .area-sobre > .container-lista > img{
+        display: none;
+    }
+    .area-sobre > p{
+        font-size: large;
+        text-align: center;
+        padding: 0px 70px;
+    }
+    .area-sobre > .container-lista > .div-lista > h3{
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .area-sobre > .container-lista > .div-lista > ul > li{
+        font-size: large;
+    }
+    .clinica-multi > p{
+        padding: 0px 100px;
+        font-size: large;
+    }
+    .clinica-multi > .alinhar-imagem > figure > .diminuir-img{
+        width: 300px;
+    }
+    #contato > p{
+        padding: 0px 30px;
+        font-size: large; 
+    }
+    #contato > iframe{
+        padding: 0px 20px;
+    }
+    footer > .div-footer p{
+        color: #bae4e7;
+    }
+} 
+/*==============================================================================*/ 
+@media (min-width: 769px) and (max-width: 1024px){
+    header > .topo{
+        padding: 0px 14px;
+    }
+    .cont-img-topo > .img-topo{
+        padding-left: 14px;
+        font-size: 40px;
+    }
+    .area-sobre > p{
+        font-size: larger;
+        text-align: center;
+        padding: 0px 70px;
+    } 
+    .area-sobre > .container-lista > .div-lista > h3{
+        text-align: center;
+        font-weight: normal;
+        font-size: x-large;
+    }
+    .area-sobre > .container-lista > .div-lista > ul > li{
+        font-size: large;
+    }
+    .clinica-multi > .alinhar-imagem > figure > .diminuir-img{
+        width: 260px;  
+    }
+    .clinica-multi > p{
+        padding: 0px 200px;
+        font-size: larger;
+    }
+    #contato > p{
+        padding: 0px 160px;
+        font-size: larger; 
+    }
+    #contato > iframe{
+        padding: 0px 20px;
+    }
+    footer > .div-footer p{
+        color: #bae4e7;
+        font-size: larger;
+    }
+}

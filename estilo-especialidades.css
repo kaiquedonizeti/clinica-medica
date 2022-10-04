@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro';
+    color: #0000008c;
+    margin: 0;
+    padding: 0;
+}
+.link-especialidades{
+    max-width: 1024px;
+    margin: 20px auto;  
+}
+.link-especialidades > nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.link-especialidades > nav > .espacar{
+    text-decoration: none;
+    margin-left: 18px;
+    padding-bottom: 2px;
+    color: #000000;
+    border-bottom: 2px solid #00cad1;
+}
+.link-especialidades > nav > .espacar:hover{
+    color: #2ec0c5;
+    transition: 0.4s;
+}
+.link-especialidades > nav > .nao-espacar:hover{
+    color: #2ec0c5;
+    transition: 0.4s;
+}
+.link-especialidades > h1{
+    text-align: center;
+    color: #0000008c;
+    font-weight: bold;
+    text-transform: none;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.p-mudar{
+    max-width: 520px;
+    margin: 25px auto;
+    text-align: center;
+}
+#Pediatria, #Geriatria, #Psicologia, #Fisioterapia, #Ortopedia{
+    max-width: 1024px;
+}
+main{
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.img-tam{
+    width: 300px;
+}
+.container-tabela{
+    display: flex;
+}
+table{ 
+    border-collapse: collapse;
+    width: 100%;
+}
+table > thead > .background-cabeca > th{
+    text-align: left;
+    background-color: #00cad1;
+    padding: 10px;
+    color: #fff;
+}
+table > tbody > tr > td{
+    padding: 10px 10px 10px 10px;
+}
+tr:nth-of-type(odd){
+    background-color: #cdcdcd;
+}
+tr:nth-of-type(even){
+    background-color: #f1f1f1;
+}
+/*=============================================================================================*/
+@media (max-width: 425px){
+    header{
+        height: 120px;
+    }
+    header > .topo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    header > .topo > a > .logo-topo{
+        width: 120px;
+    }
+    header > .topo > .link-topo{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #0c6e7185;
+        padding-top: 10px;
+    }
+    header > .topo > .link-topo > a{
+        padding: 0;
+    }
+    .img-tam{
+        display: none;
+    }
+    .p-mudar{
+        text-align: center;
+        padding: 0px 10px;
+    }
+    .espacar{
+        margin: 6px;
+    }
+}
+/*=============================================================================================*/
+@media (min-width: 426px) and (max-width: 768px){
+    .img-tam{
+        display: none;
+    }
+    table{
+        margin: 0px 20px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    #Pediatria, #Geriatria, #Psicologia, #Fisioterapia, #Ortopedia{
+        margin: 0px 30px;
+    }
+    .img-tam{
+        width: 350px;
+    }
+}
