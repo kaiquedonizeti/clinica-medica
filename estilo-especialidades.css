@@ -24,6 +24,9 @@ body{
     color: #000000;
     border-bottom: 2px solid #00cad1;
 }
+.link-especialidades > nav > .nao-espacar{
+    margin-left: 0px;
+}
 .link-especialidades > nav > .espacar:hover{
     color: #2ec0c5;
     transition: 0.4s;
@@ -100,9 +103,6 @@ tr:nth-of-type(even){
     }
     header > .topo > .link-topo > a{
         padding: 0;
-    }
-    .link-especialidades > .espacar{
-        margin: 0px;
     }
     .img-tam{
         display: none;
