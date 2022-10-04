@@ -101,6 +101,9 @@ tr:nth-of-type(even){
     header > .topo > .link-topo > a{
         padding: 0;
     }
+    .link-especialidades > .espacar{
+        margin: 0px;
+    }
     .img-tam{
         display: none;
     }
